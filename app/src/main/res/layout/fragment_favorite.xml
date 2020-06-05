@@ -1,0 +1,159 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg">
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="6dp"
+            android:elevation="3dp"
+            android:background="@drawable/card_bg"
+            card_view:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:id="@+id/onTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/busLogo"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/car_logo" />
+
+                <TextView
+                    android:id="@+id/busName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@+id/busLogo"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fromto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/busName"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/busLogo" />
+
+                <ImageView
+                    android:id="@+id/busImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="5dp"
+                    android:scaleType="fitXY"
+                    android:layout_below="@+id/fromto"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+                <TextView
+                    android:id="@+id/firstClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/busImg"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="10dp"
+                    android:text="First Class"
+                    android:textColor="@color/textColor" />
+
+                <TextView
+                    android:id="@+id/busFPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/busImg"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/price_bg"
+                    android:padding="10dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:textColor="@color/priceColor" />
+
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:id="@+id/normalClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Normal Class"
+                    android:textColor="@color/textColor"
+                    android:layout_alignTop="@+id/busSPrice"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:id="@+id/busSPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/busFPrice"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/price_bg"
+                    android:padding="10dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:textColor="@color/priceColor" />
+
+                <Button
+                    android:id="@+id/busOneWay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/normalClass"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/btn_pressed_bg"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="      One Way      "
+                    android:textAllCaps="false"
+                    android:textColor="#353333"
+                    android:textStyle="italic" />
+
+                <Button
+                    android:id="@+id/busDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/normalClass"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/btn_pressed_bg"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="       Detail        "
+                    android:textAllCaps="false"
+                    android:textColor="#353333"
+                    android:textStyle="italic" />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>

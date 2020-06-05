@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_one_way_ship"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@+id/emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/not_found_img"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"            >
+
+            <ImageView
+                android:id="@+id/warn"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="200dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_warning"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:layout_toRightOf="@id/warn"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="225dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:text="We can't go this two cities."/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

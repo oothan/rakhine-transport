@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.transportation.lm14.transport.activity.DetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_marginTop="56dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:id="@+id/onTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="7dp">
+
+            <ImageView
+                android:id="@+id/vTypeImg"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignLeft="@+id/vLogo"
+                android:layout_alignStart="@+id/vLogo"
+                android:layout_toLeftOf="@+id/departure"
+                android:layout_toStartOf="@+id/departure" />
+            <ImageView
+                android:layout_margin="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/vTypeImg"
+                android:id="@+id/vLogo"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/vName"
+                android:layout_below="@id/vTypeImg"
+                android:layout_toRightOf="@+id/vLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="5dp" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/vName"
+                android:layout_toRightOf="@+id/vLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fromTo"
+                android:layout_marginBottom="7dp"/>
+
+
+
+            <TextView
+                android:text="Departure"
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/textColor"
+                android:id="@+id/Departure"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/fromTo"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/textColor"
+                android:id="@+id/departure"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/fromTo"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:text="Time"
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/textColor"
+                android:id="@+id/Time"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/Departure"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/textColor"
+                android:id="@+id/time"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/departure"
+                android:layout_marginBottom="5dp"/>
+
+
+            <TextView
+                android:layout_marginLeft="7dp"
+                android:text="First Class"
+                android:textColor="@color/textColor"
+                android:id="@+id/firstClass"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Time"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_marginRight="7dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:id="@+id/priceF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/price_bg"
+                android:textColor="@color/priceColor"
+                android:layout_below="@id/Time"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="7dp"
+                android:text="Second Class"
+                android:textColor="@color/textColor"
+                android:id="@+id/secondClass"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstClass"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_marginRight="7dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:id="@+id/priceS"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/price_bg"
+                android:textColor="@color/priceColor"
+                android:layout_below="@id/priceF"
+                android:layout_alignParentRight="true" />
+
+            <Button
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/priceS"
+                android:textStyle="italic"
+                android:id="@+id/OWdetail"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_pressed_bg"
+                android:text="      Detail      "
+                android:textAllCaps="false"
+                android:textColor="#353333"
+                android:layout_marginBottom="30dp"/>
+
+
+        </RelativeLayout>
+
+        </ScrollView>
+
+</RelativeLayout>

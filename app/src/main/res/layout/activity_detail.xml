@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.transportation.lm14.transport.activity.DetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_marginTop="50dp"
+            android:layout_margin="7dp"
+            android:orientation="vertical"
+            android:id="@+id/onTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="7dp">
+
+            <ImageView
+                android:id="@+id/vTypeImg"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="52dp"
+                android:scaleType="fitXY"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+            <ImageView
+                android:layout_margin="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/vTypeImg"
+                android:id="@+id/vLogo"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/vName"
+                android:layout_below="@id/vTypeImg"
+                android:layout_toRightOf="@+id/vLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="5dp" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/vName"
+                android:layout_toRightOf="@+id/vLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fromTo"
+                android:layout_marginBottom="7dp"/>
+
+            <TextView
+                android:layout_marginLeft="7dp"
+                android:text="First Class"
+                android:textColor="@color/textColor"
+                android:id="@+id/firstClass"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fromTo"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_marginRight="7dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:id="@+id/priceF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/price_bg"
+                android:textColor="@color/priceColor"
+                android:layout_below="@id/fromTo"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_marginLeft="7dp"
+                android:text="Second Class"
+                android:textColor="@color/textColor"
+                android:id="@+id/secondClass"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstClass"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_marginRight="7dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:id="@+id/priceS"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/price_bg"
+                android:textColor="@color/priceColor"
+                android:layout_below="@id/priceF"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:text="Departure"
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/textColor"
+                android:id="@+id/Departure"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/priceS"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/textColor"
+                android:id="@+id/departure"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/priceS"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:text="Time"
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/textColor"
+                android:id="@+id/Time"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/Departure"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/textColor"
+                android:id="@+id/time"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/departure"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:textSize="20dp"
+                android:id="@+id/Contact"
+                android:layout_margin="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:layout_below="@id/time"
+                android:textStyle="bold|italic"/>
+
+            <ImageView
+                android:id="@+id/addIcon"
+                android:src="@drawable/ic_address"
+                android:layout_margin="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/Contact"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Contact"
+                android:layout_toRightOf="@id/addIcon"/>
+
+            <ImageView
+                android:layout_marginBottom="10dp"
+                android:id="@+id/oldPhone"
+                android:src="@drawable/ic_old_phone"
+                android:layout_margin="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/addIcon"/>
+
+            <TextView
+                android:layout_marginBottom="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/phoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addIcon"
+                android:layout_toRightOf="@id/oldPhone"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|end|right"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_margin="@dimen/fab_margin"
+        app:fabSize="normal"
+        android:src="@drawable/ic_phone_call_selected"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        app:borderWidth="0dp"
+        app:useCompatPadding="false"/>
+
+</RelativeLayout>
